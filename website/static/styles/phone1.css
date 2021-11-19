@@ -1,0 +1,97 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.navbar ul li{
+    font-size: .6rem;
+}
+.navbar ul li a{
+    padding: 2px 8px;
+}
+.navbar ul li a:hover{
+    border-bottom: 1px solid whitesmoke;
+}
+.dropdown-content {
+	min-width: 50px;
+	box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.2);
+	z-index: 4px;
+	border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fas{
+    display: none;
+}
+  
+.dropdown-content a {
+	color: black;
+	padding: 8px 10px;
+}
+
+.heading{
+    font-size: 1.8rem;
+}
+
+.gallery img{
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.box img{
+    width: 275px;
+    height: 130px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.box{
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    background-color: purple;
+    align-items: center;
+    text-align: justify;
+}
+.box h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box p{
+    font-size: .8rem;
+}
+
+.about{
+    flex-direction: column;
+    background-color: green;
+}
+
+.about h2{
+    text-align: center;
+}
+
+#about img{
+    width: 200px;
+    height: 250px;
+    padding: 0px 15px;
+    border-bottom: 30px;
+}
+
+.achievements{
+    flex-direction: column;
+    background-color: rgb(29, 51, 29);
+}
+
+.achievements h2{
+    text-align: center;
+}
+#home-projects .projects{
+	padding-top: 500px ;
+}

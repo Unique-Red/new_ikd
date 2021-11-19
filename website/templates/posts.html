@@ -1,0 +1,23 @@
+{% extends "postbase.html" %}
+{% block title %}
+{{post.title}}
+{% endblock %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+<main>
+    <article id="popular-news">
+        <div id="events"> 
+            <h2>{{post.title}}</h2>
+            <br>
+            <div>
+                <p>{{post.text}}</p>
+            </div>
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='uploads/' + post.file2) }}" class="d-block w-100"  alt="...">
+            </div>
+        </div>
+            
+    </article>
+</main>
+</form>
+{% endblock %}

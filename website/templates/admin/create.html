@@ -1,0 +1,57 @@
+{% extends "admin/admintable.html" %}
+
+{% block title %}
+    Create
+{% endblock %}
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    <div align="center">
+        <br>
+        <h2>Write about the latest project</h2>
+        <br><br>
+        <div class="formm">
+        <h4>Project Title</h4>
+        <textarea name="title" id="title" class="form-control" placeholder="Project Title" maxlength="50" required></textarea>
+        </div>
+        <div class="formm">
+            <h4>Sample Text</h4>
+            <textarea name="stext" id="text" class="form-control" placeholder="Project details" maxlength="150" required></textarea>
+        </div>
+        <div class="form">
+        <h4>About project</h4>
+        <textarea name="text" id="text" class="form-control" placeholder="Project details" required></textarea>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <input type="file" id="file" name="file" required>
+        <br>
+        <input type="file" id="file" name="file1" required>
+        <br>
+        <input type="file" id="file" name="file2" required>
+        <br>
+        <input type="file" id="file" name="file3">
+        <br>
+        <input type="file" id="file" name="file4">
+        <br>
+        <input type="file" id="file" name="file5">
+        <br>
+        <input type="file" id="file" name="file6">
+        <br>
+        <input type="file" id="file" name="file7">
+        <br>
+        <input type="file" id="file" name="file8">
+        <br>
+        <button type="submit" class="btn btn-dark" align="center">Post</button>
+        </div>
+    </div>
+</form>
+<style>
+    body{
+        background-color: rgb(56, 99, 56);
+    }
+</style>
+
+{% endblock %}

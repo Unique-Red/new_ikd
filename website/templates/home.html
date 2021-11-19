@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+    <article id="popular-news">
+        <div id="events">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/image/ikd.jpg" class="d-block w-100">                   
+                </div>
+              {% for post in posts[-10:] %}
+                <div class="carousel-item">
+                  <a href="{{url_for('post', id=post.id)}}" class="">
+                  <img src="{{ url_for('static', filename='uploads/' + post.file) }}" class="d-block w-100"  alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="text-transform: uppercase;">{{post.title}}</h5>
+                      <p>{{post.stext}}</p>
+                    </div>
+                </div>
+              {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              
+            </div>
+          </div>
+    </article>
+    <section id="about">
+      <h1 class="heading">Meet Our Executive Chairman</h1>
+      <div class="about">
+          <img src="/static/image/wad.jpg" alt=" "><br>
+          <div class="name">
+              <h2>Honorable Wasiu Adesina</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid doloremque, natus distinctio et commodi, consectetur, culpa dolor quam ipsum amet blanditiis ex! Sapiente quisquam amet dolorum, sit quibusdam totam perspiciatis. Aut minus quidem ipsum, qui quis pariatur quo earum consectetur unde labore nulla dolores sint eaque itaque esse maxime perspiciatis officiis voluptatum iste illum libero delectus atque asperiores? Veniam inventore eaque possimus excepturi ipsam corrupti, sequi repellendus itaque maxime saepe veritatis voluptatem necessitatibus aliquid laboriosam ipsa asperiores atque, magnam praesentium quaerat. Nobis, debitis perspiciatis ex cum minima numquam quisquam in velit consequatur eos odit consequuntur, dolores praesentium vel amet! Sit natus repudiandae illum nam nisi ipsam deserunt voluptatem cum! Aliquam necessitatibus libero deleniti sit! Odio magnam reiciendis adipisci voluptatibus aut perferendis eligendi. Natus veniam esse atque eveniet eligendi facilis minus quae unde dolores pariatur ad aut doloribus, quod odit sapiente aliquid, neque ipsam, voluptate in? Qui enim ex porro laudantium.</p>
+          </div>
+      </div>
+  </section>
+
+ 
+  <form method="POST" enctype="multipart/form-data">
+    <section id="home-projects" style="background-color: green;">
+        <div class="projects container">
+          <div class="projects-header">
+            <h1 style="background-color: white;">Hon. Wasiu Adesina's achievements in 100 days</h1>
+          </div>
+            <div class="all-projects">
+                {% for post in posts %}
+                <div class="project-item">
+                    <div class="project-img" style="margin: 30px; border-radius: 20px;">
+                        <img src="{{ url_for('static', filename='uploads/' + post.file) }}" alt="Card image">
+                    </div>
+                    <div class="project-info">
+                      <h2>{{post.title}}</h2>
+                      <p>{{post.stext}}</p>   
+                      <a href="{{url_for('post', id=post.id)}}" class="btn btn-sm btn-outline-warning">Read More</a>
+                    </div>
+                </div>      
+                {% endfor %}
+            </div>    
+        </div>
+    </section>
+    </form>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "admin/admintable.html" %}
+
+{% block title %}
+    Admin
+{% endblock %}
+
+{% block content %}
+<br>
+<table class="table table-sm table-condensed table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Sample Text</th>
+            <th scope="col">Image</th>
+            <th scope="col">Date</th>
+            <th scope="col">Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for post in posts %}
+        <tr>
+            <td>-</td>
+            <td>{{post.title}}</td>
+            <td>{{post.stext}}</td>
+            <td><img src="{{url_for('static', filename='uploads/' + post.file)}}" width="50" height="40"></td>
+            <td>{{post.date_created.strftime('%B %d, %Y')}}</td>
+            <td>
+                <a class="btn btn-outline-danger btn-sm"href="{{url_for('delete', id=post.id)}}">Delete</a>   
+            </td>
+        </tr>
+        {% endfor %}       
+    </tbody>
+</table>
+{% endblock %}

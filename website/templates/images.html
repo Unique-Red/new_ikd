@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+Images
+{% endblock %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% for post in posts %}
+    <br>
+    <div align="center">
+        <h2>{{post.title}}</h2>
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file1) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file2) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file3) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file4) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file5) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file6) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file7) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>
+    <div>                  
+        <img src="{{ url_for('static', filename='uploads/' + post.file8) }}" alt="..." class="img-thumbnail">
+    </div>
+    <br>      
+    {% endfor %}
+</form>
+{% endblock %}
+
