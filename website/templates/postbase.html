@@ -14,11 +14,11 @@
     <script src="https://kit.fontawesome.com/a0e3929ec3.js" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/nav1.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/nav.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/cre.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/styless.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/contact.css')}}">
+    <link rel="stylesheet" media="screen and (min-width:1171px)" href="{{url_for('static', filename='styles/desktop.css')}}">
     <link rel="stylesheet" media="screen and (max-width:1170px)" href="{{url_for('static', filename='styles/tablet.css')}}">
     <link rel="stylesheet" media="screen and (max-width:900px)" href="{{url_for('static', filename='styles/phone.css')}}">
     <link rel="stylesheet" media="screen and (max-width:695px)" href="{{url_for('static', filename='styles/phone1.css')}}">
@@ -32,10 +32,11 @@
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Government<i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                <a href="/legislative">Legislative</a>
                 <a href="/executive">Executive</a>
+                <a href="/legislative">Legislative Arm</a>
                 <a href="/judiciary">Judiciary</a>
-                <a href="#">Traditional</a>
+                <a href="/administrative">Administrative Officers</a>
+                <a href="/traditional">Traditional</a>
                 </div>
             </li>
             <li><a href="/project" class="dropbtn">Projects</a></li>
@@ -49,11 +50,15 @@
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Resources<i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                <a href="#">Notable Sons & Daughters Of Ikorodu</a>
-                <a href="/administrative">Administrative Officers</a>
+                <a href="/political">Political Office Holders</a>
+                <a href="/political-leader">Political Leaders in Ikorodu Division</a>
+                <a href="#">Monuments in Ikorodu</a>
+                <a href="/heritage">History of Ikorodu</a>
+                <a href="#">Past Leaders of Ikorodu</a>
+                <a href="/sons&daughters">Notable Sons & Daughters Of Ikorodu</a>
                 </div>
             </li>   
-            <li><a href="/contact" class="dropbtn">Contact Us</a></li>
+            <li><a href="/contact" class="dropbtn">ContactUs</a></li>
         </ul>
     </nav>
     </header>

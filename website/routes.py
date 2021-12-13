@@ -1,10 +1,11 @@
-from flask import render_template, session, request, redirect, url_for, flash
+from flask import render_template, session, request, redirect, url_for, flash, Blueprint
 from sqlalchemy.sql.functions import current_user
 from .models import Post, User
 from flask_login import login_user, logout_user, login_required
 from werkzeug.security import generate_password_hash, check_password_hash
 from website import app, db
 import os
+
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
@@ -48,6 +49,11 @@ def heritage():
 def pol():
     posts = Post.query.all()
     return render_template ("pol.html", posts=posts)
+
+@app.route("/sons&daughters")
+def s_d():
+    posts = Post.query.all()
+    return render_template ("s&d.html", posts=posts)
 
 @app.route("/judiciary")
 def judiciary():
@@ -236,22 +242,6 @@ def updatetext(id):
     else:
         return render_template("admin/updatetext.html", text_to_update=text_to_update)
 
-
-"""@app.route("/updatetable/<int:id>", methods=["GET","POST"])
-@login_required
-def updatetable(id):
-    posts = Post.query.get_or_404(id)
-    if request.method == 'POST':
-        title = request.form.get("title")
-        text = request.form.get("text")
-        file = request.files["file"]
-        posts.title = title
-        posts.text = text
-        file.save(os.path.join(os.path.abspath(__package__),"static/uploads/"+file.filename))
-        posts.file = file.filename
-        flash("Edited Successfully!", "Success")
-        db.session.commit()
-    return render_template("admin/updatetable.html", posts=posts)"""
 
 @app.route("/updatestext/<int:id>", methods=["GET","POST"])
 @login_required
