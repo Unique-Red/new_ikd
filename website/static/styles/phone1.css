@@ -42,32 +42,13 @@
     margin: 10px;
     border-radius: 20px;
 }
-.box img{
-    width: 275px;
-    height: 130px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 20px;
-}
-.box{
-    height: auto;
-    width: 300px;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 10px;
-    background-color: purple;
-    align-items: center;
-    text-align: justify;
-}
-.box h2{
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.box p{
-    font-size: .8rem;
+.gallery h4{
+    font-size: small;
 }
 
+p{
+    font-size: smaller;
+}
 .about{
     flex-direction: column;
     background-color: green;
@@ -93,5 +74,5 @@
     text-align: center;
 }
 #home-projects .projects{
-	padding-top: 500px ;
+	padding-top: 640px ;
 }

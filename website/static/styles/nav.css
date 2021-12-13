@@ -213,7 +213,7 @@ p{
 }
 
 .name p{
-  font-size: 1.2rem;
+  font-size: medium;
 }
 #achievements{
   display: flex;

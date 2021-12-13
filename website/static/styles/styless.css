@@ -211,8 +211,9 @@ header img{
 
 #home-projects .projects {
 	flex-direction: column;
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 	margin: 0 auto;
+	padding-top: 10px;
 }
 #home-projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -404,5 +405,12 @@ header img{
 	#projects .all-projects .project-img {
 		width: 300px;
 		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	header img{
+		height: 100px;
+		width: 100px;
 	}
 }
