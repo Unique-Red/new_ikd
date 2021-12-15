@@ -1,0 +1,17 @@
+#home-projects .projects{
+	padding-top: 200px ;
+}
+#home-projects .projects-header h1 {
+	margin-bottom: 20px;
+}
+.fas{
+    display: none;
+}
+#carouselExampleFade .carousel-item img{
+    height: 60vh;
+}
+  
+#carouselExampleFade .carousel-item:before{
+  width: 100vw;
+  height: 60vh;
+}

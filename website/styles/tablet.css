@@ -1,0 +1,57 @@
+#about img{
+    padding: 0px 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.name {
+    padding: 5px;
+}
+
+.name h2{
+    font-size: 1.7rem;
+}
+
+.name p{
+    font-size: small;
+}
+.ach {
+    padding: 5px;
+}
+.ach h2{
+    font-size: 1.7rem;
+}
+
+.ach p{
+    font-size: 1rem;
+}
+
+#home-projects .projects{
+	padding-top: 50px ;
+}
+.breaking-news-section{
+	padding: 0 18px 0px 18px;
+  height: 30px;
+}
+#btext{
+	width: 80px;
+	font-size: 10px;
+	font-weight: 500;
+}
+.breaking-news{
+	padding: 0 18px;	
+	font-weight: 360;
+}
+.bntime{
+	padding: 0 8px;
+	font-size: 9px;
+}
+#carouselExampleFade .carousel-item img{
+    height: 70vh;
+}
+  
+#carouselExampleFade .carousel-item:before{
+  width: 100vw;
+  height: 70vh;
+}
