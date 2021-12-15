@@ -6,16 +6,47 @@
 <form method="POST" enctype="multipart/form-data">
 <main>
     <article id="popular-news">
-        <div id="events" align="center"> 
-            <h2>{{post.title}}</h2>
+        <div id="events"> 
+            <h2 align="center">{{post.title}}</h2>
+            <i class="far fa-calendar-alt">  {{post.date_created.strftime('%B %d, %Y')}}</i>
+
+            
             <br>
             <div>
               <img src="{{ url_for('static', filename='uploads/' + post.file) }}" alt="..." class="img-thumbnail">
             </div>
             <div>
-              <p style="background-color: chartreuse;">{{post.text}}</p>
+              <p style="background-color: green; color: white;">{{post.text}}</p>
             </div>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file2) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file3) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file4) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file5) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file6) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file7) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <div>                  
+                <img src="{{ url_for('static', filename='uploads/' + post.file8) }}" alt="..." class="img-thumbnail">
+            </div>
+            <br>
+            <!--div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="{{ url_for('static', filename='uploads/' + post.file) }}" class="d-block w-100"  alt="...">
@@ -34,7 +65,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
+            </div-->
         </div>
     </article>
 </main>
