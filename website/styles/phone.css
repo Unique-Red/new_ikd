@@ -1,13 +1,34 @@
-#home-projects .projects{
-	padding-top: 200px ;
-}
 #home-projects .projects-header h1 {
 	margin-bottom: 20px;
 }
 .fas{
     display: none;
 }
+
+#about img{
+  width: 200px;
+  height: 250px;
+  padding: 0px 15px;
+  border-bottom: 30px;
+}
+.about{
+  flex-direction: column;
+  background-color: green;
+}
+
+.about h2{
+  text-align: center;
+}
+
 #carouselExampleFade .carousel-item img{
+  height: 50vh;
+}
+
+#carouselExampleFade .carousel-item:before{
+width: 100vw;
+height: 50vh;
+}
+/*#carouselExampleFade .carousel-item img{
     height: 60vh;
 }
   

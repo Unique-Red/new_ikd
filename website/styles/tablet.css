@@ -1,12 +1,13 @@
 #about img{
     padding: 0px 20px;
-    width: 400px;
+    width: 30%;
     height: 300px;
     border-radius: 50px;
 }
 
 .name {
-    padding: 5px;
+    padding: 20px;
+    width: 100%;
 }
 
 .name h2{
@@ -27,9 +28,6 @@
     font-size: 1rem;
 }
 
-#home-projects .projects{
-	padding-top: 50px ;
-}
 .breaking-news-section{
 	padding: 0 18px 0px 18px;
   height: 30px;
@@ -47,11 +45,15 @@
 	padding: 0 8px;
 	font-size: 9px;
 }
-#carouselExampleFade .carousel-item img{
+/*#carouselExampleFade .carousel-item img{
     height: 70vh;
-}
+}*/
   
 #carouselExampleFade .carousel-item:before{
   width: 100vw;
-  height: 70vh;
+  /*height: 70vh;*/
+}
+header img{
+	width: 120px;
+	height: 120px;
 }

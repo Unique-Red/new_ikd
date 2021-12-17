@@ -42,28 +42,15 @@
     margin: 10px;
     border-radius: 20px;
 }
-.gallery h4{
-    font-size: small;
+.gallery h6{
+    font-size: 8px;
 }
 
 p{
     font-size: smaller;
 }
-.about{
-    flex-direction: column;
-    background-color: green;
-}
 
-.about h2{
-    text-align: center;
-}
 
-#about img{
-    width: 200px;
-    height: 250px;
-    padding: 0px 15px;
-    border-bottom: 30px;
-}
 
 .achievements{
     flex-direction: column;
@@ -72,9 +59,6 @@ p{
 
 .achievements h2{
     text-align: center;
-}
-#home-projects .projects{
-	padding-top: 640px ;
 }
 .breaking-news-section{
 	padding: 0 10px 0px 10px;
@@ -96,11 +80,6 @@ p{
 .breaking-news-section a{
     font-size: xx-small;
 }
-#carouselExampleFade .carousel-item img{
-    height: 50vh;
-}
-  
-#carouselExampleFade .carousel-item:before{
-  width: 100vw;
-  height: 50vh;
+.name{
+  width: 100%;
 }
