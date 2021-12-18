@@ -7,7 +7,6 @@
 }
 
 body {
-	display: grid;
 	align-items: center;
 }
 
@@ -15,7 +14,7 @@ body {
 	width: 80%;
 	height: auto;
 	margin: auto;
-	display: flex;
+	display: grid;
 	flex-wrap: wrap;
 }
 

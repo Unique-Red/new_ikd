@@ -21,7 +21,7 @@
     z-index: -1;
 }
 .navbar ul{
-    display: flex;
+    display: contents;
     list-style: none;
 }
 .navbar ul li{
@@ -37,6 +37,33 @@
 	 color: greenyellow;
 }
 
+#menuToggle{
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+  position: relative;
+  background-color: green;
+}
+#menuToggle ul{
+  display: flex;
+  list-style: none;
+}
+#menuToggle ul li{
+  font-size: 1.1rem;
+}
+#menuToggle ul li a{
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+}
+input[type=checkbox], input[type=radio] {
+  display: none;
+}
+#menuToggle ul li a:hover{
+  border-bottom: 2px solid white;
+ color: greenyellow;
+}
 #home{
   display: flex;
   flex-direction: column;
@@ -230,6 +257,10 @@ p{
 .name{
   padding: 20px;
   width: 70%;
+}
+.namee{
+  padding: 20px;
+  width: 100%;
 }
 
 .name h2{
