@@ -15,7 +15,7 @@ header
   padding: 40px 100px;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
 }
 header .logo
@@ -151,5 +151,18 @@ header .logo
   .text h3
   {
     font-size: 2em;
+  }
+}
+@media (max-width: 428px) {
+  
+  header{
+    justify-content: center;
+  }
+  #hero{
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  #hero h2{
+	  padding-top: 120px;
   }
 }

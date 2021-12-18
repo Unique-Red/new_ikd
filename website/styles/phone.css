@@ -1,9 +1,6 @@
 #home-projects .projects-header h1 {
 	margin-bottom: 20px;
 }
-.fas{
-    display: none;
-}
 
 #about img{
   width: 200px;
@@ -58,10 +55,6 @@ border-top-left-radius: 10px;
   font-size: smaller;
 }
 
-.fas{
-  display: none;
-}
-
 .dropdown-content a {
 color: black;
 padding: 8px 10px;
@@ -79,11 +72,11 @@ padding: 8px 10px;
   border-radius: 20px;
 }
 .gallery h6{
-  font-size: 8px;
+  font-size: 12px;
 }
 
 p{
-  font-size: smaller;
+  font-size: x-small;
 }
 
 .achievements{
@@ -108,7 +101,7 @@ padding: 0 10px 0px 10px;
   display: contents;
 }
 #home-projects .project-info h2 {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-top: 7px;
 }

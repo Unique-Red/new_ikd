@@ -39,10 +39,26 @@ def traditional():
     posts = Post.query.all()
     return render_template ("traditional.html", posts=posts)
 
+@app.route("/nulge")
+def nulge():
+    posts = Post.query.all()
+    return render_template ("nulge.html", posts=posts)
+
+@app.route("/past-leaders")
+def past():
+    posts = Post.query.all()
+    return render_template ("past.html", posts=posts)
+
 @app.route("/heritage")
 def heritage():
     posts = Post.query.all()
     return render_template ("heritage.html", posts=posts)
+
+
+@app.route("/historical")
+def historical():
+    posts = Post.query.all()
+    return render_template ("history.html", posts=posts)
 
 
 @app.route("/political-leader")
@@ -153,6 +169,12 @@ def create():
             file6 = request.files.get("file6")
             file7 = request.files.get("file7")
             file8 = request.files.get("file8")
+            file9 = request.files.get("file9")
+            file10 = request.files.get("file10")
+            file11 = request.files.get("file11")
+            file12 = request.files.get("file12")
+            file13 = request.files.get("file13")
+            file14 = request.files.get("file14")
 
             if not text:
                 return ('Details cannot be empty!')
@@ -166,7 +188,13 @@ def create():
                 path6 = os.path.join("website", "static", "uploads", file6.filename)
                 path7 = os.path.join("website", "static", "uploads", file7.filename)
                 path8 = os.path.join("website", "static", "uploads", file8.filename)
-                post = Post(title=title, stext=stext, text=text, file=file.filename, file1=file1.filename, file2=file2.filename, file3=file3.filename, file4=file4.filename, file5=file5.filename, file6=file6.filename, file7=file7.filename, file8=file8.filename)
+                path9 = os.path.join("website", "static", "uploads", file9.filename)
+                path10 = os.path.join("website", "static", "uploads", file10.filename)
+                path11 = os.path.join("website", "static", "uploads", file11.filename)
+                path12 = os.path.join("website", "static", "uploads", file12.filename)
+                path13 = os.path.join("website", "static", "uploads", file13.filename)
+                path14 = os.path.join("website", "static", "uploads", file14.filename)
+                post = Post(title=title, stext=stext, text=text, file=file.filename, file1=file1.filename, file2=file2.filename, file3=file3.filename, file4=file4.filename, file5=file5.filename, file6=file6.filename, file7=file7.filename, file8=file8.filename, file9=file9.filename, file10=file10.filename, file11=file11.filename, file12=file12.filename, file13=file13.filename, file14=file14.filename,)
                 file.save(path)
                 file1.save(path1)
                 file2.save(path2)
@@ -176,6 +204,12 @@ def create():
                 file6.save(path6)
                 file7.save(path7)
                 file8.save(path8)
+                file9.save(path9)
+                file10.save(path10)
+                file11.save(path11)
+                file12.save(path12)
+                file13.save(path13)
+                file14.save(path14)
 
                 
                 db.session.add(post)
@@ -248,7 +282,7 @@ def updatetext(id):
 def updatestext(id):
     stext_to_update = Post.query.get_or_404(id)
     if request.method=="POST":
-        stext_to_update.text = request.form['stext']
+        stext_to_update.stext = request.form['stext']
         try:
             db.session.commit()
             return redirect('/stext')

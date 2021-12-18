@@ -32,6 +32,11 @@ body{
     border-bottom: 1px solid whitesmoke;
 }
 
+#menuToggle ul li a:hover{
+  border-bottom: 2px solid greenyellow;
+  color: green;
+}
+
 #menuToggle input{
   display: block;
   width: 40px;

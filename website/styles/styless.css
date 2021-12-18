@@ -59,6 +59,7 @@ img {
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	padding-bottom: 3rem;
 }
 header img{
 	width: 150px;
@@ -94,9 +95,8 @@ header img{
 }
 #hero h2{
 	color: white;
-	letter-spacing: 20px;
+	letter-spacing: 15px;
 	font-family: cursive;
-	padding-top: 120px;
 }
 #hero p{
 	color: whitesmoke;
@@ -404,9 +404,9 @@ header img{
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
 	header img{
-		height: 100px;
-		width: 100px;
+		height: 110px;
+		width: 110px;
 	}
 }
