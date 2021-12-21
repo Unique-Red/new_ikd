@@ -16,7 +16,7 @@
         </div>
         <div class="formm">
             <h4>Sample Text</h4>
-            <textarea name="stext" id="text" class="form-control" placeholder="Project details" maxlength="250" required></textarea>
+            <textarea name="stext" id="stext" class="form-control" placeholder="Project details" maxlength="250" required></textarea>
         </div>
         <div class="form">
         <h4>About project</h4>
@@ -25,7 +25,7 @@
         <br>
         <br>
         <br>
-        <div>
+        <div style="padding-top: 5rem;">
             <div class="col-md-4">
                 <h6>Image 1</h6>
                 <input type="file" id="file" name="file" class="form-control" required>
@@ -91,6 +91,8 @@
         </div>
     </div>
 </form>
+{{ ckeditor.load(pkg_type="basic") }}
+{{ ckeditor.config(name='text') }}
 <style>
     body{
         background-color: rgb(56, 99, 56);

@@ -155,9 +155,7 @@ header .logo
 }
 @media (max-width: 428px) {
   
-  header{
-    justify-content: center;
-  }
+  
   #hero{
     text-align: center;
     padding-bottom: 3rem;

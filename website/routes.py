@@ -5,8 +5,10 @@ from flask_login import login_user, logout_user, login_required
 from werkzeug.security import generate_password_hash, check_password_hash
 from website import app, db
 import os
+from flask_ckeditor import CKEditor
 
 
+ckeditor = CKEditor()
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 
@@ -120,7 +122,7 @@ def auth():
     return render_template ("admin/auth.html")
 
 
-@app.route("/reg", methods=["GET", "POST"])
+@app.route("/letstrysomethingnoonecanthinkof", methods=["GET", "POST"])
 def reg():
     if request.method == "POST":
         username = request.form.get("username")

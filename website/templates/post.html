@@ -15,8 +15,8 @@
             <div>
               <img src="{{ url_for('static', filename='uploads/' + post.file) }}" alt="..." class="img-thumbnail">
             </div>
-            <div>
-              <p style="background-color: green; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">{{post.text}}</p>
+            <div style="background-color: green; color: white;">
+              {{ post.text|safe }}
             </div>
             <div>                  
                 <img src="{{ url_for('static', filename='uploads/' + post.file2) }}" alt="..." class="img-thumbnail">
