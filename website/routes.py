@@ -68,6 +68,11 @@ def pol():
     posts = Post.query.all()
     return render_template ("pol.html", posts=posts)
 
+@app.route("/cultural")
+def cultural():
+    posts = Post.query.all()
+    return render_template ("cultural.html", posts=posts)
+
 @app.route("/sons&daughters")
 def s_d():
     posts = Post.query.all()
