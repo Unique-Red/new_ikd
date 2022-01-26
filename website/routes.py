@@ -250,7 +250,6 @@ def stext():
     return render_template ("admin/stext.html", posts=posts)
 
 
-
 @app.route("/updatetitle/<int:id>", methods=['GET','POST'])
 @login_required
 def updatetitle(id):
